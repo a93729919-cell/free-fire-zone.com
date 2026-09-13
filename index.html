@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Free Fire Zone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#080808;
+    color:white;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#090909ee;
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#ff9d00;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:22px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff9d00;
+}
+
+.hero{
+    min-height:100vh;
+    padding:120px 20px 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(#0009,#0009),
+    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f")
+    center/cover;
+}
+
+.hero h1{
+    font-size:70px;
+    text-transform:uppercase;
+}
+
+.hero h1 span{
+    color:#ff9d00;
+}
+
+.hero p{
+    max-width:650px;
+    margin:20px auto;
+    color:#ddd;
+    font-size:19px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:8px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#111;
+    background:#ff9d00;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+section{
+    padding:90px 7%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.title h2{
+    font-size:40px;
+    color:#ff9d00;
+}
+
+.title p{
+    color:#999;
+    margin-top:10px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:#151515;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    border:1px solid #292929;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#ff9d00;
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#ff9d00;
+    margin-bottom:12px;
+    font-size:23px;
+}
+
+.card p{
+    color:#ccc;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#ccc;
+    font-size:18px;
+}
+
+.news{
+    max-width:900px;
+    margin:auto;
+}
+
+.news-item{
+    background:#151515;
+    margin:15px 0;
+    padding:25px;
+    border-left:4px solid #ff9d00;
+    border-radius:8px;
+}
+
+.news-item h3{
+    color:#ff9d00;
+    margin-bottom:8px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    color:#bbb;
+    margin:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#050505;
+    color:#888;
+}
+
+footer strong{
+    color:#ff9d00;
+}
+
+@media(max-width:700px){
+
+    nav ul{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    section{
+        padding:70px 5%;
+    }
+
+    .title h2{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">🔥 FREE FIRE ZONE</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#weapons">Weapons</a></li>
+        <li><a href="#maps">Maps</a></li>
+        <li><a href="#tips">Tips</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div>
+
+        <h1>
+            FREE <span>FIRE</span>
+        </h1>
+
+        <p>
+            Welcome to Free Fire Zone — your place for
+            game information, characters, weapons, maps,
+            tips, esports and updates.
+        </p>
+
+        <a href="#characters" class="btn">
+            Explore Characters
+        </a>
+
+        <a href="#tips" class="btn">
+            Gaming Tips
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="title">
+        <h2>🎮 About Free Fire</h2>
+    </div>
+
+    <div class="about">
+
+        <p>
+            Free Fire is a mobile battle royale game where
+            players compete to survive and become the last
+            player or team standing. Players can explore
+            different locations, collect equipment and use
+            different strategies during matches.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CHARACTERS -->
+
+<section id="characters">
+
+    <div class="title">
+
+        <h2>👤 Characters</h2>
+
+        <p>Explore different character abilities and play styles.</p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🧑</div>
+            <h3>Gyan Gaming</h3>
+            <p>Learn about abilities and play style.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👨‍🎤</div>
+            <h3>Character 2</h3>
+            <p>Explore skills and useful combinations.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧑‍🚀</div>
+            <h3>Character 3</h3>
+            <p>Discover different gameplay strategies.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🥷</div>
+            <h3>Character 4</h3>
+            <p>Choose a character that fits your style.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WEAPONS -->
+
+<section id="weapons">
+
+    <div class="title">
+
+        <h2>🔫 Weapons</h2>
+
+        <p>Learn about different weapon categories.</p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🔫</div>
+            <h3>Assault Rifles</h3>
+            <p>Useful for versatile combat situations.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎯</div>
+            <h3>Sniper Rifles</h3>
+            <p>Designed for long-range engagements.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>SMGs</h3>
+            <p>Suitable for fast close-range action.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💥</div>
+            <h3>Shotguns</h3>
+            <p>Powerful option for close-range fights.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MAPS -->
+
+<section id="maps">
+
+    <div class="title">
+
+        <h2>🗺️ Maps</h2>
+
+        <p>Explore different battle locations.</p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🏝️</div>
+            <h3>Bermuda</h3>
+            <p>Explore locations and plan your rotations.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏜️</div>
+            <h3>Kalahari</h3>
+            <p>Learn the terrain and important areas.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌆</div>
+            <h3>Alpine</h3>
+            <p>Discover different areas and strategies.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MODES -->
+
+<section>
+
+    <div class="title">
+
+        <h2>🏆 Game Modes</h2>
+
+        <p>Different ways to enjoy your matches.</p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">👤</div>
+            <h3>Solo</h3>
+            <p>Play independently and test your skills.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👥</div>
+            <h3>Duo</h3>
+            <p>Team up with one teammate.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👨‍👩‍👧‍👦</div>
+            <h3>Squad</h3>
+            <p>Play together with your team.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TIPS -->
+
+<section id="tips">
+
+    <div class="title">
+
+        <h2>💡 Tips & Tricks</h2>
+
+        <p>Improve your gameplay with smart strategies.</p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🎯</div>
+            <h3>Improve Aim</h3>
+            <p>Practice regularly and find comfortable controls.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🗺️</div>
+            <h3>Know The Map</h3>
+            <p>Learn important locations and rotations.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Teamwork</h3>
+            <p>Communicate clearly with your teammates.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧠</div>
+            <h3>Smart Strategy</h3>
+            <p>Make decisions based on the situation.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ESPORTS -->
+
+<section>
+
+    <div class="title">
+
+        <h2>🏆 Esports</h2>
+
+        <p>Competitive Free Fire gaming.</p>
+
+    </div>
+
+    <div class="about">
+
+        <p>
+            Add information here about esports tournaments,
+            teams, competitions and gaming events.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- UPDATES -->
+
+<section>
+
+    <div class="title">
+
+        <h2>📰 Latest Updates</h2>
+
+        <p>Add your latest gaming news here.</p>
+
+    </div>
+
+    <div class="news">
+
+        <div class="news-item">
+            <h3>🔥 Game Updates</h3>
+            <p>
+                Add information about new updates and features.
+            </p>
+        </div>
+
+        <div class="news-item">
+            <h3>🎁 Events</h3>
+            <p>
+                Add information about upcoming events and rewards.
+            </p>
+        </div>
+
+        <div class="news-item">
+            <h3>🏆 Esports News</h3>
+            <p>
+                Add tournament and competitive gaming news.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+    <div class="title">
+        <h2>📞 Contact</h2>
+    </div>
+
+    <p>Want to contact us?</p>
+
+    <p>📧 Email: your@email.com</p>
+
+    <p>📱 Social Media: @YourUsername</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Free Fire Zone</strong>
+    </p>
+
+    <p>
+        Fan-made gaming information website.
+    </p>
+
+</footer>
+
+</body>
+</html>
